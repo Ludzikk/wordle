@@ -1,0 +1,114 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+button {
+	cursor: pointer;
+}
+
+.show-green-0 {
+	animation: show-green 1s forwards;
+}
+
+.show-green-1 {
+	animation: show-green 1.5s forwards;
+}
+
+.show-green-2 {
+	animation: show-green 2s forwards;
+}
+
+.show-green-3 {
+	animation: show-green 2.5s forwards;
+}
+
+.show-green-4 {
+	animation: show-green 3s forwards;
+}
+
+.show-orange-0 {
+	animation: show-orange 1s forwards;
+}
+
+.show-orange-1 {
+	animation: show-orange 1.5s forwards;
+}
+
+.show-orange-2 {
+	animation: show-orange 2s forwards;
+}
+
+.show-orange-3 {
+	animation: show-orange 2.5s forwards;
+}
+
+.show-orange-4 {
+	animation: show-orange 3s forwards;
+}
+
+.show-gray-0 {
+	animation: show-gray 1s forwards;
+}
+
+.show-gray-1 {
+	animation: show-gray 1.5s forwards;
+}
+
+.show-gray-2 {
+	animation: show-gray 2s forwards;
+}
+
+.show-gray-3 {
+	animation: show-gray 2.5s forwards;
+}
+
+.show-gray-4 {
+	animation: show-gray 3s forwards;
+}
+
+@keyframes show-green {
+	0% {
+		transform: rotateX(90deg);
+		background: #fff;
+	}
+
+	25% {
+		transform: rotateX(90deg);
+	}
+
+	100% {
+		transform: rotateX(0deg);
+		background: linear-gradient(0deg, #04b55d 0%, #05df72 100%);
+	}
+}
+
+@keyframes show-orange {
+    0% {
+		transform: rotateX(90deg);
+		background: #fff;
+	}
+
+	25% {
+		transform: rotateX(90deg);
+	}
+
+	100% {
+		transform: rotateX(0deg);
+		background: linear-gradient(0deg, #dc7704 0%, #ff8904 100%);
+	}
+}
+
+@keyframes show-gray {
+    0% {
+		transform: rotateX(90deg);
+		background: #fff;
+	}
+
+	25% {
+		transform: rotateX(90deg);
+	}
+
+	100% {
+		transform: rotateX(0deg);
+		background: linear-gradient(0deg, #858688 0%, #a6a7aa 100%);
+	}
+}
