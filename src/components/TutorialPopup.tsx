@@ -1,10 +1,12 @@
 import { FaXmark } from "react-icons/fa6";
 
 type TutorialPopupProps = {
-	toggleTutorialPopup: () => void
-}
+	toggleTutorialPopup: () => void;
+};
 
-export default function TutorialPopup({toggleTutorialPopup}: TutorialPopupProps) {
+export default function TutorialPopup({
+	toggleTutorialPopup,
+}: TutorialPopupProps) {
 	return (
 		<div className="absolute top-1/2 left-1/2 [transform:translate(-50%,-50%)] max-w-[500px] min-w-[300px] bg-white dark:bg-neutral-800 p-4 px-8 z-10 [box-shadow:0px_0px_10px_rgba(0,0,0,0.3)]">
 			<h2 className="pb-6">

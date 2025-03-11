@@ -14,6 +14,7 @@ type GameContextType = {
 	guessedAmount: number
 	removeLetter: () => void;
 	submitWord: () => void;
+	guessedWords: null[] | string[]
 };
 
 const GameContext = createContext<GameContextType | undefined>(undefined);
@@ -131,6 +132,7 @@ export default function App() {
 				guessedAmount,
 				removeLetter,
 				submitWord,
+				guessedWords
 			}}>
 			<div className="flex flex-col items-center justify-center min-h-[100vh] pb-6 bg-white dark:bg-neutral-800 dark:text-white">
 				<TopInfo toggleTutorialPopup={toggleTutorialPopup} />

@@ -7,6 +7,7 @@ export default function Keyboard() {
 	const changeGuessedWords = gameContext?.changeGuessedWords;
 	const removeLetter = gameContext?.removeLetter;
 	const submitWord = gameContext?.submitWord;
+	const solution = gameContext?.solution;
 
 	const keys: string[] = useMemo(
 		() => [
@@ -67,10 +68,12 @@ export default function Keyboard() {
 		return () => {
 			document.removeEventListener("keydown", handleKeyPress);
 		};
-	}, [changeGuessedWords, removeLetter, submitWord, keys]); // Dependencies only include necessary functions
+	}, [changeGuessedWords, removeLetter, submitWord, keys]);
 
 	const keyEl = keys.map((key) => {
-		return <Key key={key} letter={key} />;
+		if (solution) {
+			return <Key key={key} letter={key} />;
+		}
 	});
 
 	return (

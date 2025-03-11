@@ -22,9 +22,9 @@ export default function Row({ word, index }: RowProps) {
 					? `show-orange-${i}`
 					: `show-gray-${i}`;
 
-			tiles.push(<RowItem key={index + "-" + i} bgColor={bgColor}>{word[i]}</RowItem>);
+			tiles.push(<RowItem key={index + "-" + i} letter={word[i]} bgColor={bgColor}>{word[i]}</RowItem>);
 		} else {
-			tiles.push(<RowItem key={index + "-" + i} bgColor="">{word[i]}</RowItem>);
+			tiles.push(<RowItem key={index + "-" + i} letter={word[i]} bgColor="">{word[i]}</RowItem>);
 		}
 	}
 

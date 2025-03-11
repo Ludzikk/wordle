@@ -44,11 +44,13 @@ export default function TopInfo({ toggleTutorialPopup }: TopInfoProps) {
 					href="https://github.com/Ludzikk"
 					target="_blank"
 					rel="noopener norefferer"
+					aria-label="Click to visit my github"
 					className="hover:scale-[1.05] hover:opacity-80 duration-300">
 					<FaGithub />
 				</a>
 				<button
 					onClick={changeTheme}
+					aria-label="Click to change theme of website"
 					className="hover:scale-[1.05] hover:opacity-80 duration-300">
 					<FaMoon />
 				</button>
